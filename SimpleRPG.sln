@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFPUI", "SimpleRPG\WFPUI.csproj", "{D07AC1D3-1FBE-471C-B06F-26F4C0F7D261}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFUI", "SimpleRPG\WPFUI.csproj", "{D07AC1D3-1FBE-471C-B06F-26F4C0F7D261}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engine", "Engine\Engine.csproj", "{146601EF-2AE0-4CEE-BD0E-541542C874E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{D07AC1D3-1FBE-471C-B06F-26F4C0F7D261}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D07AC1D3-1FBE-471C-B06F-26F4C0F7D261}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D07AC1D3-1FBE-471C-B06F-26F4C0F7D261}.Release|Any CPU.Build.0 = Release|Any CPU
+		{146601EF-2AE0-4CEE-BD0E-541542C874E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{146601EF-2AE0-4CEE-BD0E-541542C874E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{146601EF-2AE0-4CEE-BD0E-541542C874E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{146601EF-2AE0-4CEE-BD0E-541542C874E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

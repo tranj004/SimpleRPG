@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SimpleRPG.Properties
+namespace WPFUI.Properties
 {
 
 
