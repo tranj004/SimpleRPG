@@ -23,6 +23,9 @@ namespace Engine.Factories
                 "This is the house of your neighbor, Farmer Ted.",
                 "/Engine;component/Images/Locations/Farmhouse.png");
 
+            newWorld.LocationAt(-1, -1).TraderHere =
+                TraderFactory.GetTraderByName("Farmer Ted");
+
             newWorld.AddLocation(0, -1, "Home",
                 "This is your home",
                 "/Engine;component/Images/Locations/Home.png");
@@ -30,6 +33,9 @@ namespace Engine.Factories
             newWorld.AddLocation(-1, 0, "Trading Shop",
                 "The shop of Susan, the trader.",
                 "/Engine;component/Images/Locations/Trader.png");
+
+            newWorld.LocationAt(-1, 0).TraderHere = 
+                TraderFactory.GetTraderByName("Susan");
 
             newWorld.AddLocation(0, 0, "Town square",
                 "You see a fountain here.",
@@ -48,6 +54,9 @@ namespace Engine.Factories
             newWorld.AddLocation(0, 1, "Herbalist's hut",
                 "You see a small hut, with plants drying from the roof.",
                 "/Engine;component/Images/Locations/HerbalistsHut.png");
+
+            newWorld.LocationAt(0, 1).TraderHere =
+                TraderFactory.GetTraderByName("Pete the Herbalist");
 
             newWorld.LocationAt(0, 1).QuestsAvailableHere.Add(QuestFactory.GetQuestByID(1));
 
