@@ -16,8 +16,8 @@ namespace Engine.Factories
                 case 1:
                     Monster snake = new Monster("Snake", "Snake.png", 4, 4, 1, 2, 5, 1);
 
-                    AddLootItem(snake, 9001, 25);
-                    AddLootItem(snake, 9002, 75);
+                    AddLootItem(snake, 9001, 35);
+                    AddLootItem(snake, 9002, 65);
 
                     return snake;
 
@@ -46,7 +46,7 @@ namespace Engine.Factories
         {
             if (RandomNumberGenerator.NumberBetween(1, 100) <= percentage)
             {
-                monster.Inventory.Add(new ItemQuantity(itemID, 1));
+                monster.AddItemToInventory(ItemFactory.CreateGameItem(itemID));
             }
         }
     }
