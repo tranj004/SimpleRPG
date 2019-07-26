@@ -24,6 +24,7 @@ namespace WPFUI
     public partial class MainWindow : Window
     {
         private readonly GameSession _gameSession = new GameSession();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -58,6 +59,11 @@ namespace WPFUI
         private void OnClick_AttackMonster(object sender, RoutedEventArgs e)
         {
             _gameSession.AttackCurrentMonster();
+        }
+
+        private void OnClick_UseCurrentConsumable(object sender, RoutedEventArgs e)
+        {
+            _gameSession.UseCurrentConsumable();
         }
 
         private void OnGameMessageRaised(object sender, GameMessageEventArgs e)
